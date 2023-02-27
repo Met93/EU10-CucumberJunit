@@ -1,4 +1,4 @@
-package cydeo.runners;
+package cydeoo.runners;
 
 import io.cucumber.junit.*;
 import org.junit.runner.*;
@@ -12,7 +12,7 @@ import org.junit.runner.*;
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
     },
         features = "src/test/resources/features",
-        glue = "cydeo/step_definitions",
+        glue = "cydeoo/step_definitions",
         dryRun = false,
         tags = "",
         publish = false

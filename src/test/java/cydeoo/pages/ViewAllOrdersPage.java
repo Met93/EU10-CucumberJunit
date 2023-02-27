@@ -1,6 +1,6 @@
-package cydeo.pages;
+package cydeoo.pages;
 
-import cydeo.utilities.*;
+import cydeoo.utilities.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.*;
 

@@ -1,7 +1,7 @@
-package cydeo.step_definitions;
+package cydeoo.step_definitions;
 
-import cydeo.pages.*;
-import cydeo.utilities.*;
+import cydeoo.pages.*;
+import cydeoo.utilities.*;
 import io.cucumber.java.en.*;
 
 import java.util.*;

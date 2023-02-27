@@ -1,11 +1,11 @@
-package cydeo.step_definitions;
+package cydeoo.step_definitions;
 
 /*
 In the class we will be able to pass pre- & post- conditions to
  each scenario and each step
  */
 
-import cydeo.utilities.*;
+import cydeoo.utilities.*;
 import io.cucumber.java.*;
 import org.openqa.selenium.*;
 
@@ -42,7 +42,7 @@ public class Hooks {
         }
 
 
-        //BrowserUtils.sleep(5);
+        BrowserUtils.sleep(5);
         Driver.closeDriver();
 
         //System.out.println("====Closing browser using cucumber @After");

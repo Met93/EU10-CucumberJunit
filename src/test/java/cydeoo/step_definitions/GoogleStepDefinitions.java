@@ -1,7 +1,7 @@
-package cydeo.step_definitions;
+package cydeoo.step_definitions;
 
-import cydeo.pages.*;
-import cydeo.utilities.*;
+import cydeoo.pages.*;
+import cydeoo.utilities.*;
 import io.cucumber.java.en.*;
 import org.junit.*;
 import org.openqa.selenium.*;
@@ -10,6 +10,10 @@ public class GoogleStepDefinitions {
 
     GoogleSearchPage googleSearchPage = new GoogleSearchPage();
 
+    @When("user clicks to accept button")
+    public void userClicksToAcceptButton() {
+        googleSearchPage.acceptButton.click();
+    }
     @When("user types apple and clicks enter")
     public void user_types_and_clicks_enter2() {
 
@@ -29,7 +33,7 @@ public class GoogleStepDefinitions {
     @Then("user sees {string} in the google title")
     public void user_sees_in_the_google_title(String string) {
 
-        String expectedTitle = string+" - Google Search";
+        String expectedTitle = string+" - Google'da Ara";
         String actualTitle = Driver.getDriver().getTitle();
 
         //Junit assertion accepts first arg as expected, second arg as actual
@@ -40,7 +44,7 @@ public class GoogleStepDefinitions {
     @Then("user sees apple in the google title")
     public void user_sees_apple_in_the_google_title() {
 
-        String expectedTitle = "apple - Google Search";
+        String expectedTitle = "apple - Google'da Ara";
         String actualTitle = Driver.getDriver().getTitle();
 
         //Junit assertion accepts first arg as expected, second arg as actual
@@ -71,7 +75,9 @@ public class GoogleStepDefinitions {
 
     @Then("User should see {string} in the result")
     public void userShouldSeeInTheResult(String expectedCapital) {
-        String actualValue = googleSearchPage.getCapital();
+        String actualValue = googleSearchPage.getCapital.getText();
         Assert.assertEquals(expectedCapital,actualValue);
     }
+
+
 }

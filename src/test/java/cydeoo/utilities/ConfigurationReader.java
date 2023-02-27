@@ -1,4 +1,4 @@
-package cydeo.utilities;
+package cydeoo.utilities;
 
 import java.io.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package cydeo.step_definitions;
+package cydeoo.step_definitions;
 
 import io.cucumber.java.en.*;
 
